@@ -11,13 +11,13 @@
 ## the final design proposal
 
 1. First page
-![First page](./images-final-design-readme/img01.PNG)
+![First page](./src/images/readme/img01.PNG)
 
 2. very satisfied
-![very satisfied](./images-final-design-readme/img02.PNG)
+![very satisfied](./src/images/readme/img02.PNG)
 
 3. very dissatisfied
-![very dissatisfied](./images-final-design-readme/img03.PNG)
+![very dissatisfied](./src/images/readme/img03.PNG)
 
 ## **devDependencies :**
 - [npm install --save-dev webpack](https://webpack.js.org/guides/installation/)
