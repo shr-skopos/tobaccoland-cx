@@ -1,15 +1,11 @@
 export default function animateSmiley() {
 
     // elements
-    const SURVEYENGINEBODY = document.querySelector("#SurveyEngineBody");
     const QUESTIONS = document.querySelector("#Questions");
     const SKINCONTENT = document.querySelector("#SkinContent");
 
       // build views
       const buildSpeechBubble = () => {
-        
-        let speechBubble = createEl("div");
-        speechBubble.className = "speechBubble";
 
         let topSpeechBubble = createEl("div");
         topSpeechBubble.className = "topSpeechBubble";
@@ -18,9 +14,10 @@ export default function animateSmiley() {
 
         let bottomSpeechBubble = createEl("div");
         bottomSpeechBubble.className = "bottomSpeechBubble";
-
+        
         SKINCONTENT.prepend(topSpeechBubble);
-        SKINCONTENT.appendChild(bottomSpeechBubble);
+        Buttons.insertAdjacentElement("beforebegin", bottomSpeechBubble);
+
     }
     buildSpeechBubble();
 
