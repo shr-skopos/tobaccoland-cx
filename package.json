@@ -6,7 +6,7 @@
   "mode": "production",
   "scripts": {
     "build": "webpack && lessc src/style.less dist/style.css",
-    "start": "nodemon --watch src --ext 'js,json,css' --exec \"npm run build\"",
+    "start": "nodemon --watch src --ext 'js,less' --exec \"npm run build\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
