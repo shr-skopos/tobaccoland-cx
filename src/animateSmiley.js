@@ -2,8 +2,8 @@ export default function animateSmiley() {
 
     // elements
     const SURVEYENGINEBODY = document.querySelector("#SurveyEngineBody");
-    const INNERINNER = document.querySelector(".InnerInner");
-    const QUESTIONTEXT = document.querySelector(".InnerInner .QuestionText");
+    const QUESTIONS = document.querySelector("#Questions");
+    const SKINCONTENT = document.querySelector("#SkinContent");
 
       // build views
       const buildSpeechBubble = () => {
@@ -11,18 +11,16 @@ export default function animateSmiley() {
         let speechBubble = createEl("div");
         speechBubble.className = "speechBubble";
 
-        let topAboveSpeechBubble = createEl("div");
-        topAboveSpeechBubble.className = "topAboveSpeechBubble";
+        let topSpeechBubble = createEl("div");
+        topSpeechBubble.className = "topSpeechBubble";
 
-        let centerAboveSpeechBubble = createEl("div");
-        centerAboveSpeechBubble.className = "centerAboveSpeechBubble";
+        QUESTIONS.className = "centerSpeechBubble";
 
-        let bottomAboveSpeechBubble = createEl("div");
-        bottomAboveSpeechBubble.className = "bottomAboveSpeechBubble";
+        let bottomSpeechBubble = createEl("div");
+        bottomSpeechBubble.className = "bottomSpeechBubble";
 
-        centerAboveSpeechBubble.appendChild(QUESTIONTEXT);
-        speechBubble.append(topAboveSpeechBubble,centerAboveSpeechBubble,bottomAboveSpeechBubble);
-        INNERINNER.appendChild(speechBubble);
+        SKINCONTENT.prepend(topSpeechBubble);
+        SKINCONTENT.appendChild(bottomSpeechBubble);
     }
     buildSpeechBubble();
 
