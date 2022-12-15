@@ -88,7 +88,6 @@
       left: -252px !important;
     }
 
-
   }
 
   @media only screen and (min-width: 800px) and (max-width: 1198px) {
@@ -106,14 +105,6 @@
     }
 
   }
-
-  @media only screen and (min-width: 420px) and (max-width: 768px) {
-    .Skin .QuestionBody {
-      padding: 3px 18px !important;
-      overflow-x: hidden !important;
-    }
-  }
-
   @media only screen and (min-width: 420px) and (max-width: 800px) {
     #Questions::after {
       width: 177px;
@@ -124,7 +115,7 @@
     #Questions.end::after {
       width: 177px !important;
       height: 130px !important;
-      bottom: 15px !important;
+      bottom: 0px !important;
 
     }
 
@@ -138,9 +129,9 @@
     }
 
     #Questions.end::after {
-      width: 85px;
-      height: 62px;
-      bottom: 58px;
+      width: 85px!important;
+      height: 62px !important;
+      bottom: 0px!important;
     }
 
     .Skin #Buttons {
@@ -174,46 +165,70 @@
   }
 
   // Eyes
-  .leftEye {
+ .leftEye {
     display: block;
     filter: blur(.5px);
     position: absolute;
   }
 
   @media only screen and (min-width: 1198px) {
-    .leftEye {
+    #Questions.start .leftEye {
       height: 22px;
       width: 22px;
       left: -163px;
-      bottom: 171px;
+      bottom: 175px;
+    }
+    #Questions.end .leftEye {
+      height: 22px!important;
+      width: 22px!important;
+      left: -215px!important;
+      bottom: 110px!important;
     }
   }
 
   @media only screen and (min-width: 800px) and (max-width: 1198px) {
-    .leftEye {
+    #Questions.start .leftEye {
       height: 17px;
       width: 17px;
       left: 30px;
-      bottom: 114px;
+      bottom: 117px;
     }
-  }
-
-  @media only screen and (min-width: 420px) and (max-width: 768px) {
-    .leftEye {
-      
+    #Questions.end .leftEye {
+      height: 17px!important;
+      width: 17px!important;
+      left: 30px!important;
+      bottom: 52px!important;
     }
   }
 
   @media only screen and (min-width: 420px) and (max-width: 800px) {
-    .leftEye {
-      
+    #Questions.start .leftEye {
+      height: 17px;
+      width: 17px;
+      left: 30px;
+      bottom: 107px;
+    }
+    #Questions.end .leftEye {
+      height: 17px!important;
+      width: 17px!important;
+      left: 30px!important;
+      bottom: 37px!important;
     }
 
   }
 
   @media only screen and (max-width: 420px) {
-    .leftEye {
-
+    #Questions.start .leftEye {
+      height: 8px;
+      width: 8px;
+      left: 16px;
+      bottom: 76px;
+    }
+    #Questions.end .leftEye {
+      height: 8px!important;
+      width: 8px!important;
+      left: 16px!important;
+      bottom: 18px!important;
     }
   }
 

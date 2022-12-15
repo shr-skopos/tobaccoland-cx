@@ -38,7 +38,7 @@ export default function animateSmiley(page) {
         eyeLid.className = "eyeLid";
 
         leftEye.appendChild(eyeLid);
-        SKINCONTENT.appendChild(leftEye);
+        QUESTIONS.appendChild(leftEye);
     }
     buildBlinkingEye();
 
