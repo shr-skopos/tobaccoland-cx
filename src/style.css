@@ -8,29 +8,192 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  /*CSS blinking BEGIN*/
 }
-#SurveyEngineBody .QuestionOuter {
-  max-width: 686px;
-  padding: 0 20px;
+#SurveyEngineBody .Skin .QuestionText {
+  margin: 0 10px;
 }
-#SurveyEngineBody .speechBubble {
-  width: 100%;
+#SurveyEngineBody .Skin #LogoContainer {
+  padding: 0;
+}
+#SurveyEngineBody #SkinContent {
+  margin: 0 25px !important;
+  max-width: 666px;
+}
+#SurveyEngineBody .Skin .QuestionOuter {
+  padding-bottom: 0 !important;
+}
+#SurveyEngineBody .Skin .QuestionText {
+  padding: 0 !important;
 }
 #SurveyEngineBody .topSpeechBubble {
   background-color: transparent;
   background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_7POEgfXAi6JW51A");
   background-repeat: no-repeat;
   height: 65px;
+  background-size: contain;
+  background-position: bottom;
 }
 #SurveyEngineBody .centerSpeechBubble {
   background-color: transparent;
   background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_bBCo642NsUfhULc");
-  background-repeat: no-repeat;
   background-repeat: repeat-y;
+  background-size: contain;
+  background-position: bottom;
 }
 #SurveyEngineBody .bottomSpeechBubble {
   background-color: transparent;
   background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_bNKwHRsTu06AlzE");
   background-repeat: no-repeat;
-  height: 150px;
+  height: 135px;
+  background-size: contain;
+  background-position: top;
+}
+#SurveyEngineBody .Skin #Buttons {
+  margin-top: 149px;
+}
+#SurveyEngineBody #Questions::after {
+  content: "";
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  position: absolute;
+}
+#SurveyEngineBody .Skin #PushStickyFooter {
+  height: 0px !important;
+}
+@media only screen and (min-width: 1198px) {
+  #SurveyEngineBody #Questions::after {
+    width: 233px;
+    height: 191px;
+    bottom: 106px;
+    left: -207px;
+  }
+  #SurveyEngineBody #Questions.end::after {
+    width: 233px !important;
+    height: 191px !important;
+    bottom: 40px !important;
+    left: -252px !important;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1198px) {
+  #SurveyEngineBody #Questions::after {
+    width: 177px;
+    height: 130px;
+    bottom: 81px;
+  }
+  #SurveyEngineBody #Questions.end::after {
+    width: 177px !important;
+    height: 130px !important;
+    bottom: 15px !important;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 768px) {
+  #SurveyEngineBody .Skin .QuestionBody {
+    padding: 3px 18px !important;
+    overflow-x: hidden !important;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 800px) {
+  #SurveyEngineBody #Questions::after {
+    width: 177px;
+    height: 130px;
+    bottom: 70px;
+  }
+  #SurveyEngineBody #Questions.end::after {
+    width: 177px !important;
+    height: 130px !important;
+    bottom: 15px !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #SurveyEngineBody #Questions::after {
+    width: 85px;
+    height: 62px;
+    bottom: 58px;
+  }
+  #SurveyEngineBody #Questions.end::after {
+    width: 85px;
+    height: 62px;
+    bottom: 58px;
+  }
+  #SurveyEngineBody .Skin #Buttons {
+    margin-top: 0px !important;
+  }
+  #SurveyEngineBody .Skin #PushStickyFooter {
+    height: 0 !important;
+  }
+  #SurveyEngineBody .topSpeechBubble {
+    height: 38px !important;
+  }
+}
+#SurveyEngineBody #Questions.start::after {
+  background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3x71eV4X7Tp2NYa");
+}
+#SurveyEngineBody #Questions.happy::after {
+  background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_56hwGNO2707gSUu");
+}
+#SurveyEngineBody #Questions.sad::after {
+  background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_ebRBuexvGzEL3qS");
+}
+#SurveyEngineBody #Questions.end::after {
+  background-image: url("https://skopos.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3x71eV4X7Tp2NYa");
+}
+#SurveyEngineBody .leftEye {
+  display: block;
+  filter: blur(0.5px);
+  position: absolute;
+}
+@media only screen and (min-width: 1198px) {
+  #SurveyEngineBody .leftEye {
+    height: 22px;
+    width: 22px;
+    left: -163px;
+    bottom: 171px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1198px) {
+  #SurveyEngineBody .leftEye {
+    height: 17px;
+    width: 17px;
+    left: 30px;
+    bottom: 114px;
+  }
+}
+#SurveyEngineBody .eyeLid {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50%;
+}
+#SurveyEngineBody .eyeLid {
+  -webkit-animation: blinkingEye 6s infinite ;
+  animation: blinkingEye 6s infinite ;
+}
+@-webkit-keyframes blinkingEye {
+  35% {
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+  }
+  58% {
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+  }
+  60% {
+    height: 0%;
+    margin: 4px 0;
+    border-radius: 50% 50% 15% 15%;
+  }
+  66% {
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+  }
+  100% {
+    height: 100%;
+    margin: 0;
+  }
 }

@@ -132,16 +132,15 @@
 
   @media only screen and (max-width: 420px) {
     #Questions::after {
-      width: 25%;
-      height: 74px;
-      bottom: 44px;
+      width: 85px;
+      height: 62px;
+      bottom: 58px;
     }
 
     #Questions.end::after {
-      width: 25% !important;
-      height: 74px !important;
-      bottom: -13px !important;
-
+      width: 85px;
+      height: 62px;
+      bottom: 58px;
     }
 
     .Skin #Buttons {
@@ -176,21 +175,53 @@
 
   // Eyes
   .leftEye {
-    display: inline-block;
-    margin-top: -7.7rem;
-    margin-left: 2rem;
+    display: block;
     filter: blur(.5px);
-    -webkit-filter: blur(.5px);
+    position: absolute;
+  }
+
+  @media only screen and (min-width: 1198px) {
+    .leftEye {
+      height: 22px;
+      width: 22px;
+      left: -163px;
+      bottom: 171px;
+    }
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1198px) {
+    .leftEye {
+      height: 17px;
+      width: 17px;
+      left: 30px;
+      bottom: 114px;
+    }
+  }
+
+  @media only screen and (min-width: 420px) and (max-width: 768px) {
+    .leftEye {
+      
+    }
+  }
+
+  @media only screen and (min-width: 420px) and (max-width: 800px) {
+    .leftEye {
+      
+    }
+
+  }
+
+  @media only screen and (max-width: 420px) {
+    .leftEye {
+
+    }
   }
 
   .eyeLid {
-    width: 17px;
-    height: 17px;
+    width: 100%;
+    height: 100%;
     background: #ffffff;
-    border-radius: 50% 50% 20% 20%;
-    -moz-border-radius: 50% 50% 20% 20%;
-    -webkit-border-radius: 50% 50% 20% 20%;
-
+    border-radius: 50%;
   }
 
   /*CSS blinking BEGIN*/
@@ -201,35 +232,32 @@
 
   @-webkit-keyframes blinkingEye {
     35% {
-      height: 17px;
+      height: 100%;
       margin: 0;
       border-radius: 50%;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-
     }
 
     58% {
-      height: 17px;
+      height: 100%;
       margin: 0;
-
+      border-radius: 50%;
     }
 
     60% {
-      height: 0px;
+      height: 0%;
       margin: 4px 0;
-
+      border-radius: 50% 50% 15% 15%;
     }
 
     66% {
-      height: 17px;
+      height: 100%;
       margin: 0;
+      border-radius: 50%;
     }
 
     100% {
-      height: 17px;
+      height: 100%;
       margin: 0;
-
     }
   }
 
